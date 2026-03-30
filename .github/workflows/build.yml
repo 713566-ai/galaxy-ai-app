@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: 🧱 Build EXE
-        run: npx electron-builder
+        run: npx electron-builder --win portable
 
       - name: 📤 Upload EXE
         uses: actions/upload-artifact@v3
